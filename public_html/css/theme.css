@@ -382,8 +382,50 @@ header {
   background-color: #8a059e;
 }
 
-header a {
+header .branding {
+  text-align: center;
+}
+
+header .branding a {
   color: #ffffff;
+}
+
+header nav ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 5px 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+  color: #42f587;
+}
+
+@media (min-width: 768px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .container nav ul {
+    display: flex;
+  }
+  header .container nav ul li a {
+    padding: 5px 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .container nav ul li a {
+    padding: 5px 15px;
+  }
 }
 
 .about-section {
