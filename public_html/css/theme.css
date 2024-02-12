@@ -1,5 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap");
+.btn-default, .btn-danger, .btn-success, .btn-warning, .btn-info, .btn-dark {
+  display: inline-block;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-default {
+  background-color: #5e5858;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #d63227;
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #42f587;
+  color: #ffffff;
+}
+
+.btn-warning {
+  background-color: #d66727;
+  color: #ffffff;
+}
+
+.btn-info {
+  background-color: #6e9ef0;
+  color: #ffffff;
+}
+
+.btn-dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 /*comment compiled*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -433,14 +474,10 @@ header nav ul li a:hover, header nav ul li a.active {
   background: #ffffff;
 }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Feb 9, 2024, 5:39:35 PM
-    Author     : ivona
-*/
+.service-section {
+  padding: 30px 0;
+}
+
 .comment-section {
   padding: 30px 0;
   background: #ffffff;
