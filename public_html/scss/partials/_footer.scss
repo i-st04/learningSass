@@ -1,11 +1,64 @@
 $footer-bg: $purple;
 $footer-color: $white;
+$footer-link-hover:$green;
+
+$footer-font:$playfair;
+
+
+
 
 footer{
     padding: 30px 0;
     background-color: $footer-bg;
+    text-align: center;
+    ul{
+
+        list-style: none;
+        padding-left: 0;
+        li{
+            a{
+                text-transform: uppercase;
+                padding: 5px 8px;
+                display: block;
+                font-family: $footer-font;
+                color: $footer-color;
+                &:hover{
+                    color: $footer-link-hover;
+                }
+
+            }
+        }
+    }
+
+    p{
+        color: $footer-color;
+    }
+
+
 }
 
-footer a,footer p{
-    color: $footer-color;
+@media(min-width:768px){
+    footer{
+        
+        text-align: right;
+        
+        .container{
+           
+
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                
+                li{
+                    a{
+                        padding: 5px 15px;
+                        
+                        
+                    }
+                }
+
+            }
+        }
+    }
 }
+

@@ -465,10 +465,41 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 footer {
   padding: 30px 0;
   background-color: #8a059e;
+  text-align: center;
 }
 
-footer a, footer p {
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li a {
+  text-transform: uppercase;
+  padding: 5px 8px;
+  display: block;
+  font-family: "Playfair Display", serif;
   color: #ffffff;
+}
+
+footer ul li a:hover {
+  color: #42f587;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  footer {
+    text-align: right;
+  }
+  footer .container ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer .container ul li a {
+    padding: 5px 15px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
