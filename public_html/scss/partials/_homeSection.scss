@@ -1,6 +1,10 @@
 $home-bg:$white;
 
 .home-section{
-    @include styleSection(30px, 30px, $home-bg);
+    @include styleSection(150px, 150px, $home-bg);
+    background-image: url(../img/home.png); //putanja mora da bude relativna u odnosu na css fajl a ne na scss
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
