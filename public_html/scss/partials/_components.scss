@@ -1,11 +1,22 @@
-$btn-default:$dark-grey;
+/*$btn-default:$dark-grey;
 $btn-default-color:$white;
 
 $btn-danger:$red;
 $btn-success:$green;
 $btn-warning:$orange;
 $btn-info:$blue;
-$btn-dark:$black;
+$btn-dark:$black;*/
+
+
+$btn-colection:(
+    "default" : $dark-grey,
+    "danger"  : $red,
+    "success" : $green,
+    "warning" : $orange,
+    "info"    : $blue,
+    "dark"    : lighten($black, 10%)
+);
+
 //posto ne kotistimo klasu .btn da nam se ne bi kompajliraja u css kodu umesto 
 //korscenja [.] ispred klase mozemo da stavimo [%]
 //na ovaj nacin ova klasa predstavlja - invisible class
@@ -20,7 +31,19 @@ $btn-dark:$black;
     cursor: pointer;
 }
 
+@each $key, $value in $btn-colection{
+    .btn-#{$key}{
+        @extend %btn;
+        background-color: $value;
+        color: colorYiq($value);
+        
+        &:hover{
+            background-color:  darken($value, 10%);
+        }
+    }
+}
 
+/*
 .btn-default{
     @extend %btn;
     background-color: adjust-color($btn-default, $red:15);
@@ -80,5 +103,5 @@ $btn-dark:$black;
     &:hover{
         background-color: lighten($btn-dark, 20%);
     }
-}
+}*/
 

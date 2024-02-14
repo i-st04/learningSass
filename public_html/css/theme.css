@@ -1,3 +1,11 @@
+/*$btn-default:$dark-grey;
+$btn-default-color:$white;
+
+$btn-danger:$red;
+$btn-success:$green;
+$btn-warning:$orange;
+$btn-info:$blue;
+$btn-dark:$black;*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap");
 .btn-default, .btn-danger, .btn-success, .btn-warning, .btn-info, .btn-dark {
@@ -12,12 +20,12 @@
 }
 
 .btn-default {
-  background-color: #6d5858;
+  background-color: #5e5858;
   color: #ffffff;
 }
 
 .btn-default:hover {
-  background-color: black;
+  background-color: #443f3f;
 }
 
 .btn-danger {
@@ -30,7 +38,7 @@
 }
 
 .btn-success {
-  background-color: rgba(66, 245, 135, 0.2);
+  background-color: #42f587;
   color: #000000;
 }
 
@@ -57,14 +65,75 @@
 }
 
 .btn-dark {
-  background-color: #000000;
+  background-color: #1a1a1a;
   color: #ffffff;
 }
 
 .btn-dark:hover {
-  background-color: #333333;
+  background-color: black;
 }
 
+/*
+.btn-default{
+    @extend %btn;
+    background-color: adjust-color($btn-default, $red:15);
+    color: colorYiq($btn-default);
+    
+    &:hover{
+        background-color: darken($btn-default, 40%);
+    }
+}
+
+.btn-danger{
+    @extend %btn;
+    background-color: $btn-danger;
+    color: colorYiq($btn-danger);
+    
+    &:hover{
+        background-color: darken($btn-danger, 10%);
+    }
+}
+
+.btn-success{
+    @extend %btn;
+    background-color: rgba($btn-success, 0.2);
+    color: colorYiq($btn-success);
+    
+    &:hover{
+        background-color: darken($btn-success, 10%);
+    }
+}
+
+.btn-warning{
+    @extend %btn;
+    background-color: $btn-warning;
+    color: colorYiq($btn-warning);
+    
+    
+    &:hover{
+        background-color: darken($btn-warning, 10%);
+    }
+}
+
+.btn-info{
+    @extend %btn;
+    background-color: $btn-info;
+    color: colorYiq($btn-info);
+    
+    &:hover{
+        background-color: darken($btn-info, 10%);
+    }
+}
+
+.btn-dark{
+    @extend %btn;
+    background-color: $btn-dark;
+    color: colorYiq($btn-dark);
+    
+    &:hover{
+        background-color: lighten($btn-dark, 20%);
+    }
+}*/
 /*comment compiled*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
