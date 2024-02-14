@@ -27,10 +27,10 @@ $table-font:$roboto;
         }
 
         thead{
-            background-color: $th-color;
+            background-color: lighten($th-color, 50%);
             
             th{
-            color: $tr-bg-color;
+            color: colorYiq(lighten($th-color, 50%));
             border:$thead-border;
             }
         }
