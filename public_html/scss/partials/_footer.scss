@@ -8,8 +8,11 @@ $footer-font:$playfair;
 
 
 footer{
-    padding: 30px 0;
-    background-color: $footer-bg;
+    //padding: 30px 0;
+    //background-color: $footer-bg;
+    
+    @include styleSection(30px, 30px, $footer-bg);
+    
     text-align: center;
     ul{
 
@@ -25,7 +28,7 @@ footer{
                 font-size: 1.8rem;
                 &:hover,
                     &.active{
-                    color: $footer-link-hover;
+                    color: lighten(complement($footer-bg),15%);
                 }
 
             }

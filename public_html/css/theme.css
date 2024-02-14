@@ -4,16 +4,20 @@
   display: inline-block;
   padding: 5px 15px;
   border: none;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 5px 50% 5px 50%;
+  -moz-border-radius: 5px 50% 5px 50%;
+  -webkit-border-radius: 5px 50% 5px 50%;
+  -o-border-radius: 5px 50% 5px 50%;
   cursor: pointer;
 }
 
 .btn-default {
-  background-color: #5e5858;
+  background-color: #5e5867;
   color: #ffffff;
+}
+
+.btn-default:hover {
+  background-color: #443f3f;
 }
 
 .btn-danger {
@@ -21,9 +25,17 @@
   color: #ffffff;
 }
 
+.btn-danger:hover {
+  background-color: #ab281f;
+}
+
 .btn-success {
-  background-color: #42f587;
+  background-color: rgba(66, 245, 135, 0.2);
   color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #12f268;
 }
 
 .btn-warning {
@@ -31,14 +43,26 @@
   color: #ffffff;
 }
 
+.btn-warning:hover {
+  background-color: #ab521f;
+}
+
 .btn-info {
   background-color: #6e9ef0;
   color: #ffffff;
 }
 
+.btn-info:hover {
+  background-color: #407feb;
+}
+
 .btn-dark {
   background-color: #000000;
   color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #333333;
 }
 
 /*comment compiled*/
@@ -419,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  padding: 30px 0px;
+  padding: 30px 0 30px;
   background-color: #8a059e;
 }
 
@@ -446,7 +470,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover, header nav ul li a.active {
-  color: #42f587;
+  color: #25e807;
 }
 
 @media (min-width: 768px) {
@@ -469,38 +493,85 @@ header nav ul li a:hover, header nav ul li a.active {
   }
 }
 
+.home-section {
+  padding: 30px 0 30px;
+  background-color: #ffffff;
+}
+
 .about-section {
   padding: 30px 0;
   background: #ffffff;
 }
 
 .service-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
+  background-color: transparent;
 }
 
 .comment-section {
-  padding: 30px 0;
-  background: #ffffff;
+  padding: 30px 0 30px;
+  background-color: #ffffff;
 }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Feb 9, 2024, 5:47:38 PM
-    Author     : ivona
-*/
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Feb 9, 2024, 5:47:57 PM
-    Author     : ivona
-*/
+.comment-section .comment-img img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.course-section {
+  padding: 50px 0;
+  padding: 50px 0 50px;
+  background-color: transparent;
+}
+
+.course-section table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.course-section table th, .course-section table td {
+  border: 1px solid #000000;
+  padding: 10px 5px;
+}
+
+.course-section table caption {
+  text-align: start;
+  font-style: italic;
+}
+
+.course-section table thead {
+  background-color: #8a059e;
+}
+
+.course-section table thead th {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.course-section table tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.course-section table tbody tr:hover {
+  background-color: #c8c8c8;
+}
+
+@media (min-width: 768px) {
+  .course-section table th, .course-section table td {
+    padding: 12px  10px;
+  }
+}
+
+.contact-section {
+  padding: 30px 0 30px;
+  background-color: #ffffff;
+}
+
 footer {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #8a059e;
   text-align: center;
 }
@@ -520,7 +591,7 @@ footer ul li a {
 }
 
 footer ul li a:hover, footer ul li a.active {
-  color: #42f587;
+  color: #25e807;
 }
 
 footer p.copyright {

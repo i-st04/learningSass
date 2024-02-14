@@ -13,45 +13,72 @@ $btn-dark:$black;
     display: inline-block;
     padding: 5px 15px;
     border: none;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius:5px; 
+    
+    // @include radius(5px);
+    @include customRadius(5px, 50%,5px, 50%);
+    
     cursor: pointer;
 }
 
+
 .btn-default{
     @extend %btn;
-    background-color: $btn-default;
+    background-color: adjust-color($btn-default, $blue:15);
     color: $btn-default-color;
+    
+    &:hover{
+        background-color: darken($btn-default, 10%);
+    }
 }
 
 .btn-danger{
     @extend %btn;
     background-color: $btn-danger;
     color: $btn-default-color;
+    
+    &:hover{
+        background-color: darken($btn-danger, 10%);
+    }
 }
 
 .btn-success{
     @extend %btn;
-    background-color: $btn-success;
+    background-color: rgba($btn-success, 0.2);
     color: $btn-default-color;
+    
+    &:hover{
+        background-color: darken($btn-success, 10%);
+    }
 }
 
 .btn-warning{
     @extend %btn;
     background-color: $btn-warning;
     color: $btn-default-color;
+    
+    
+    &:hover{
+        background-color: darken($btn-warning, 10%);
+    }
 }
 
 .btn-info{
     @extend %btn;
     background-color: $btn-info;
     color: $btn-default-color;
+    
+    &:hover{
+        background-color: darken($btn-info, 10%);
+    }
 }
 
 .btn-dark{
     @extend %btn;
     background-color: $btn-dark;
     color: $btn-default-color;
+    
+    &:hover{
+        background-color: lighten($btn-dark, 20%);
+    }
 }
+
