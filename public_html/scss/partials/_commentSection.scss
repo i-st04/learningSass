@@ -3,12 +3,46 @@ $comment-bg:$white;
 .comment-section{
     //padding: 30px 0;
     //background: $comment-bg;
-    
+
     @include styleSection(30px, 30px, $comment-bg);
+  
+    .comment-list{
+        list-style: none;
+        padding-left: 0;
+        .comment-item{
+           
+            @include display-flex;
+            padding-bottom: 25px;
+
+            .comment-img{
+                @include flex(0,0,50px);
+
+                img{
+                    @include radius(50%);
+                }
+            }
+            
+            .comment-body{
+                padding-left: 15px;
+                
+                h2{
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
     
-    .comment-img{
-        img{
-            @include radius(50%);
+
+}
+
+@media(min-width:768px){
+    .comment-section{
+        .comment-list{
+            .comment-item{
+                .comment-img{
+                    @include flex(0,0,90px);
+                }
+            }
         }
     }
 }

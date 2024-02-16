@@ -42,6 +42,22 @@
     background-color: $bg;
 }
 
+@mixin display-flex(){
+    display: flex;
+    -webkit-display:flex;
+    -moz-display:flex;
+    -ms-display:flex;
+}
+
+@mixin flex($grow,$shrink,$basis){
+     
+    flex: $grow $shrink $basis;
+    -webkit-flex:$grow $shrink $basis;
+    -moz-flex:$grow $shrink $basis;
+    -ms-flex:$grow $shrink $basis;
+    
+}
+
 //function
 
 @function colorYiq($color){

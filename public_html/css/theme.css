@@ -12,10 +12,10 @@ $btn-dark:$black;*/
   display: inline-block;
   padding: 5px 15px;
   border: none;
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -o-border-radius: 0px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
   cursor: pointer;
 }
 
@@ -586,11 +586,48 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: #ffffff;
 }
 
-.comment-section .comment-img img {
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -o-border-radius: 0px;
+.comment-section .comment-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comment-section .comment-list .comment-item {
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  padding-bottom: 25px;
+}
+
+.comment-section .comment-list .comment-item .comment-img {
+  flex: 0 0 50px;
+  -webkit-flex: 0 0 50px;
+  -moz-flex: 0 0 50px;
+  -ms-flex: 0 0 50px;
+}
+
+.comment-section .comment-list .comment-item .comment-img img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.comment-section .comment-list .comment-item .comment-body {
+  padding-left: 15px;
+}
+
+.comment-section .comment-list .comment-item .comment-body h2 {
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .comment-section .comment-list .comment-item .comment-img {
+    flex: 0 0 90px;
+    -webkit-flex: 0 0 90px;
+    -moz-flex: 0 0 90px;
+    -ms-flex: 0 0 90px;
+  }
 }
 
 .course-section {
@@ -639,8 +676,41 @@ header nav ul li a:hover, header nav ul li a.active {
 }
 
 .contact-section {
-  padding: 30px 0 30px;
+  padding: 90px 0 90px;
   background-color: #ffffff;
+  background-image: url(../img/contact.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-section .contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-section .contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-section .contact-form .form-group label {
+  display: block;
+}
+
+.contact-section .contact-form .form-group .form-control {
+  border: 1px solid #000000;
+  width: 100% !important;
+  line-height: 4rem;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
 }
 
 footer {
